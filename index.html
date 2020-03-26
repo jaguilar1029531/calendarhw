@@ -31,71 +31,71 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">09:00</th>
             <td colspan="4" class="time-block row hour"><span>MOM'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">09:30</thclass="hour">
             <td colspan="4" class="time-block row hour"><span>DAD'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">10:00</th class="hour">
             <td colspan="4" class="time-block row hour"><span>GRANDMA'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">10:30</th class="hour">
             <td colspan="4" class="time-block row hour"><span>GRANDPA'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">11:00</th class="hour">
             <td rowspan="5" class="time-block row hour"><span>BROTHER'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">11:30</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">12:00</th class="hour">
             <td rowspan="3" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">12:30</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">13:00</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">13:30</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"><span>SISTER'S HOUSE</span></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">14:00</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">14:30</th class="hour">
             <td colspan="4" rowspan="8" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">15:00</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">15:30</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">16:00</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">16:30</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
-        <tr>
+        <tr class="hourSlot">
             <th class="hour">17:00</th class="hour">
             <td colspan="4" rowspan="2" class="time-block row hour"></td>
         </tr>
@@ -115,6 +115,14 @@
   setTimeout(function () { date_time(); }, 1000);
 }
 date_time();
+
+var dailyHours = document.getElementsByClassName("hourSlot");
+
+      function colorCodeHours(){
+        // 
+      }
+// I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
       </script>
   </body>
 </html>
